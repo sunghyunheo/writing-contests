@@ -1,0 +1,168 @@
+{
+  "_note": [
+    "직접 관리하는 공모전 목록. 자동 수집(피드)으로는 안 잡히는 정기 공모를 여기에 둔다.",
+    "",
+    "status 의 뜻:",
+    "  confirmed - 공식 공고를 확인했다. deadline 이 실제 날짜다. (source, checked 필수)",
+    "  pending   - 매년 열리지만 올해 공고가 아직 안 났다. deadline 은 null 이고 window 로 시기만 알린다.",
+    "  closed    - 이번 회차가 끝났다.",
+    "",
+    "중요: pending 항목에 추측한 날짜를 넣지 않는다. 틀린 마감일은 없는 것보다 나쁘다.",
+    "공고가 뜨면 status 를 confirmed 로 바꾸고 deadline·source·checked 를 채운다."
+  ],
+  "contests": [
+    {
+      "name": "상상인 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "상상인",
+      "status": "confirmed",
+      "deadline": "2027-01-05",
+      "deadline_note": "오후 6시 마감",
+      "prize": "부문별 200만원",
+      "url": "https://sangsangin.contestkorea.com/guideline/guideline.php",
+      "source": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030110001&str_no=202602240031",
+      "checked": "2026-09-03"
+    },
+
+    {
+      "name": "조선일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "조선일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 초 공고 · 12월 초~중순 마감 · 1월 1일 발표",
+      "url": "https://www.chosun.com/",
+      "note": "전년 기준 시기. 2027년 공고는 2026년 11월 초 이후 게시된다."
+    },
+    {
+      "name": "동아일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "동아일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 초 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.donga.com/",
+      "note": "전년 기준 시기. 2027년 공고는 2026년 11월 초 이후 게시된다."
+    },
+    {
+      "name": "한국일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "한국일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 초 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://company.hankookilbo.com/business/sub1_2.aspx",
+      "note": "직전 회차(2026년 발표)는 12월 1일 마감이었다."
+    },
+    {
+      "name": "경향신문 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "경향신문",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.khan.co.kr/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "서울신문 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "서울신문",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.seoul.co.kr/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "문화일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "문화일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.munhwa.com/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "세계일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "세계일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.segye.com/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "한국경제 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "한국경제신문",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.hankyung.com/",
+      "note": "전년 기준 시기. 장편소설 부문이 따로 있는 해가 있다."
+    },
+    {
+      "name": "부산일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "부산일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.busan.com/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "매일신문 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "매일신문",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.imaeil.com/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "강원일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "강원일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.kwnews.co.kr/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "전북일보 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "전북일보",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.jjan.kr/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "농민신문 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "농민신문",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.nongmin.com/",
+      "note": "전년 기준 시기."
+    },
+    {
+      "name": "불교신문 신춘문예 (2027)",
+      "category": "newspaper",
+      "host": "불교신문",
+      "status": "pending",
+      "deadline": null,
+      "window": "11월 공고 · 12월 초 마감 · 1월 1일 발표",
+      "url": "https://www.ibulgyo.com/",
+      "note": "전년 기준 시기."
+    }
+  ]
+}

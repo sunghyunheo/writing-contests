@@ -1,0 +1,188 @@
+{
+  "_note": [
+    "신인작가 공모전 일정 트래커 설정.",
+    "categories 배열 순서 = 페이지 표시 순서. priority = 분류 우선순위(작을수록 먼저 가져간다).",
+    "match = 제목+설명에 걸리면 그 카테고리로 배정되는 키워드.",
+    "feeds = 공모전 정보를 실어오는 RSS. 설명문에서 마감일을 자동 추출한다(deadline.py).",
+    "마감일을 확신할 수 없으면 비워두고 화면에 '일정 확인 필요'로 표시한다 — 추측 날짜를 넣지 않는다."
+  ],
+  "categories": [
+    {
+      "id": "newspaper",
+      "label": "신춘문예",
+      "priority": 1,
+      "match": [
+        "신춘문예",
+        "신춘 문예"
+      ]
+    },
+    {
+      "id": "debut",
+      "label": "신인문학상 · 등단",
+      "priority": 4,
+      "match": [
+        "신인문학상",
+        "신인 문학상",
+        "신인상",
+        "등단",
+        "신진작가",
+        "신인작가",
+        "신인 공모",
+        "추천완료"
+      ]
+    },
+    {
+      "id": "prize",
+      "label": "문학상 · 장편공모",
+      "priority": 6,
+      "match": [
+        "문학상",
+        "장편소설",
+        "장편 공모",
+        "중편",
+        "단편소설",
+        "소설 공모",
+        "문예공모",
+        "소설공모"
+      ]
+    },
+    {
+      "id": "webnovel",
+      "label": "웹소설 · 장르문학",
+      "priority": 3,
+      "match": [
+        "웹소설",
+        "장르문학",
+        "판타지",
+        "무협",
+        "로맨스",
+        "로판",
+        "현대물",
+        "대체역사",
+        "카카오페이지",
+        "네이버시리즈",
+        "문피아",
+        "조아라",
+        "리디",
+        "sf",
+        "추리",
+        "미스터리",
+        "스릴러",
+        "웹툰 스토리",
+        "스토리 공모"
+      ]
+    },
+    {
+      "id": "script",
+      "label": "시나리오 · 희곡",
+      "priority": 2,
+      "match": [
+        "시나리오",
+        "희곡",
+        "극본",
+        "각본",
+        "단편영화",
+        "극영화",
+        "드라마 공모",
+        "방송작가",
+        "연극",
+        "뮤지컬 대본",
+        "웹드라마",
+        "시놉시스"
+      ]
+    },
+    {
+      "id": "essay",
+      "label": "에세이 · 논픽션",
+      "priority": 8,
+      "match": [
+        "에세이",
+        "수필",
+        "논픽션",
+        "산문",
+        "르포"
+      ]
+    },
+    {
+      "id": "poem",
+      "label": "시 · 시조",
+      "priority": 7,
+      "match": [
+        "시문학",
+        "시조",
+        "시 공모",
+        "운문",
+        "시집"
+      ]
+    },
+    {
+      "id": "amateur",
+      "label": "백일장 · 독후감 · 학생부",
+      "priority": 5,
+      "match": [
+        "백일장",
+        "독후감",
+        "독서감상",
+        "독서편지",
+        "독서왕",
+        "글짓기",
+        "어린이",
+        "초등",
+        "중등",
+        "고등부",
+        "청소년",
+        "학생",
+        "대학생",
+        "동시 쓰기",
+        "교내",
+        "장학"
+      ]
+    },
+    {
+      "id": "etc",
+      "label": "그 밖의 공모전",
+      "priority": 99,
+      "match": [
+        "공모전",
+        "공모",
+        "문학",
+        "대회"
+      ]
+    }
+  ],
+  "feeds": [
+    {
+      "name": "엽서시문학공모전",
+      "url": "https://ilovecontest.com/bbs/rss.php?bo_table=contest",
+      "kind": "contest"
+    }
+  ],
+  "news_feeds": [
+    {
+      "name": "신춘문예 공고",
+      "url": "https://news.google.com/rss/search?q=%EC%8B%A0%EC%B6%98%EB%AC%B8%EC%98%88+%EA%B3%B5%EB%AA%A8&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "신인문학상",
+      "url": "https://news.google.com/rss/search?q=%EC%8B%A0%EC%9D%B8%EB%AC%B8%ED%95%99%EC%83%81+%EA%B3%B5%EB%AA%A8&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "장편소설 공모",
+      "url": "https://news.google.com/rss/search?q=%EC%9E%A5%ED%8E%B8%EC%86%8C%EC%84%A4+%EA%B3%B5%EB%AA%A8+%EB%AC%B8%ED%95%99%EC%83%81&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "웹소설 공모전",
+      "url": "https://news.google.com/rss/search?q=%EC%9B%B9%EC%86%8C%EC%84%A4+%EA%B3%B5%EB%AA%A8%EC%A0%84&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "시나리오 공모전",
+      "url": "https://news.google.com/rss/search?q=%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4+%EA%B3%B5%EB%AA%A8%EC%A0%84&hl=ko&gl=KR&ceid=KR:ko"
+    }
+  ],
+  "settings": {
+    "imminent_days": 14,
+    "keep_closed_days": 7,
+    "max_items_per_feed": 60,
+    "request_timeout_sec": 20
+  }
+}
